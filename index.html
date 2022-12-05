@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="application.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+    <link href="custom.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="header" class="row">
+        <div class="col-9">
+          <h1 class="title"><b>Shopping</b> Cart</h1>
+          <div class="col-3">
+            <form class="col-3" id="newItem">
+              <input class="item" type="text" placeholder="New Item" />
+              <input class="price" type="number" placeholder="$0.00" step=".01" />
+              <button class="btn btn-danger btn-sm mb-1 add">+Add</button>
+            </form>
+          </div>
+        </div>
+        <div class="col-12">
+          <table class="table table-responsive table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Item</th>
+                <th scope="col">Price ($)</th>
+                <th scope="col">Quantity</th>
+                <th scope="col">Cost ($)</th>
+                <th scope="col"></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="item">Filet Mignon</td>
+                <td class="price">$50.00</td>
+                <td class="quant">
+                  <input type="number" min="0" value="0" />
+                </td>
+                <td class="cost"></td>
+                <td class="remove">
+                  <button class="btn btn-light btn-sm">
+                    Remove
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td class="item">Ribeye</td>
+                <td class="price">$40.00</td>
+                <td class="quant">
+                  <input type="number" min="0" value="0" />
+                </td>
+                <td class="cost"></td>
+                <td class="remove">
+                  <button class="btn btn-light btn-sm">
+                    Remove
+                  </button>
+              </tr>
+              <tr>
+                <td class="item">Porterhouse</td>
+                <td class="price">$30.00</td>
+                <td class="quant">
+                  <input type="number" min="0" value="0" />
+                </td>
+                <td class="cost"></td>
+                <td class="remove">
+                  <button class="btn btn-light btn-sm">
+                    Remove
+                  </button>
+              </tr>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-9">
+          <h2 class="total"><b>Cart Total:</b></h2>
+        </div>
+        <div class="col-3">
+          <h2 id="cartTotal">$</h2>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

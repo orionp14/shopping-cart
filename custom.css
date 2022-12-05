@@ -1,0 +1,50 @@
+.table {
+  table-layout: auto;
+  border-collapse: collapse;
+  margin: 2px 0;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.12);
+}
+
+
+.table thead th {
+  width: 12%;
+}
+
+
+.table thead tr {
+  background-color: #d9534f;
+  color: #ffffff;
+}
+
+.table tbody tr {
+  border-bottom: 1.1px solid #dddddd;
+}
+
+
+.item {
+  font-weight: bold;
+}
+
+#cartTotal {
+  float: right;
+  text-decoration: underline 2.5px red;
+}
+
+.total {
+  float: left;
+}
+
+td input {
+  text-align: center;
+}
+
+
+#newItem {
+  padding-top: 26.5px;
+  float: right;
+}
+
+.title {
+  float: left;
+}
